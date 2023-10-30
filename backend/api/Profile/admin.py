@@ -1,3 +1,4 @@
 from django.contrib import admin
+from Profile.models import User,Follower
 
-# Register your models here.
+admin.site.register([User,Follower])
