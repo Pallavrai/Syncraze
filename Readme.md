@@ -75,7 +75,7 @@ MIT License
 
 | Name of Contributors   |                                     Profiles                                        | Roles |
 |:---                    |            :----                                                                   |    :----  |
-| Mohammad Ashif       |  [@Mohammadashif1001](https://github.com/mohammadashif1001)                                      |Full stack|
+| Mohammad Ashif       |  [@Mohammadashif1001](https://github.com/mohammadashif1001)                                      |Fullstack|
 | Arpit Yadav       |  [@darkxxdevs](https://github.com/darkxxdevs)                                  |Fullstack |
 | Pallav Rai       |  [@darkxxdevs](https://github.com/pallavrai)                                  |Fullstack |
 
