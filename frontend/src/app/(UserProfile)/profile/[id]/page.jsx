@@ -1,295 +1,674 @@
+import GifComponent from "../../../(UserProfile)/x.gif"
 export default function Profile({ params }) {
   return (
     <>
-  {/* component */}
-  <div className="profile">
-    <nav className="bg-white shadow px-4 lg:py-5 border-b  border-gray-400">
-            <div className="flex-shrink-0 flex items-center ">
-              <img
-                className="block lg:hidden h-8 w-auto"
-                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                alt="Workflow logo"
-              />
-              <img
-                className="hidden lg:block h-8 w-auto"
-                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                alt="Workflow logo"
-              />
-            </div>
-    </nav>
-    {/*body start*/}
-    {/*profile data*/}
-    <div className="bg-gray-100 h-auto px-48">
-      <div className="flex md:flex-row-reverse flex-wrap">
-        <div className="w-full md:w-3/4 p-4 text-center">
-          <div className="text-left justify-between pl-4 pt-3">
-            <span className="font-bold text-gray-700 text-2xl mr-2">
-              Pallav Rai
-            </span>
-            <span className="text-base font-semibold text-gray-700 mr-2">
-              <button className="bg-transparent hover:bg-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded">
-                Edit Profile
-              </button>
-            </span>
-            
-          </div>
-          <div className="text-left pl-4 pt-3">
-            <span className="text-base font-semibold text-gray-700 mr-2">
-              <b>220</b> posts
-            </span>
-            <span className="text-base font-semibold text-gray-700 mr-2">
-              <b>114</b> followers
-            </span>
-            <span className="text-base font-semibold text-gray-700">
-              <b>200</b> following
-            </span>
-          </div>
-          <div className="text-left pl-4 pt-3">
-            <span className="text-lg text-gray-700 mr-2">
-              @pallavrai
-            </span>
-          </div>
-          <div className="text-left pl-4 pt-3">
-            <p className="text-base font-medium text-blue-700 mr-2">
-              #cool #html #react
-            </p>
-            <p className="text-base font-medium text-gray-700 mr-2">
-              Hello i am testing
-            </p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/4 p-4 text-center">
-          <div className="w-full relative md:w-3/4 text-center mt-8">
-            <button
-              className="flex rounded-full"
-              id="user-menu"
-              aria-label="User menu"
-              aria-haspopup="true"
-            >
-              <img
-                className="h-40 w-40 rounded-full"
-                src="https://scontent-muc2-1.cdninstagram.com/v/t51.2885-19/s150x150/58468664_291773768419326_7460980271920185344_n.jpg?_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_ohc=16Or2MWYINEAX9vLBW0&oh=ada3818c35cb64180cf431d820d9dabe&oe=5EF26035"
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-      {/*status show icon*/}
-      <div className="inline-flex ml-36 mt-16">
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <div className="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1502164980785-f8aa41d53611?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
-            />
-          </div>
-          <h1 className="pt-16 text-base font-semibold text-gray-900">Fun</h1>
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <div className="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1456415333674-42b11b9f5b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
-            />
-          </div>
-          <h1 className="pt-16 text-base font-semibold text-gray-900">
-            Travel
-          </h1>
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <div className="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-            />
-          </div>
-          <h1 className="pt-16 text-base font-semibold text-gray-900">Food</h1>
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <div className="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1516834474-48c0abc2a902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
-            />
-          </div>
-          <h1 className="pt-16 text-base font-semibold text-gray-900">
-            Sketch
-          </h1>
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <div className="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-            />
-          </div>
-          <h1 className="pt-16 text-base font-semibold text-gray-900">
-            My Work
-          </h1>
-        </div>
-      </div>
-      <hr className="border-gray-500 mt-6" />
+      {/* Header */}
+      <div className="bg-slate-950 h-full">
+        {/* Nav Bar Start */}
+        <nav className="sticky top-0 bg-slate-850 w-full h-14 flex items-center justify-between px-4 z-10">
+          <div className="text-2xl font-bold text-cyan-400">Syncraze</div>
+          {/* Navigation */}
+          <ul className="md:flex hidden justify-between">
+            <li className="mx-2 font-mono text-cyan-400 cursor-pointer">Home</li>
+            <li className="mx-2 font-mono text-cyan-400 cursor-pointer">Profile</li>
+            <li className="mx-2 font-mono text-cyan-400 cursor-pointer">Message</li>
+            <li className="mx-2 font-mono text-cyan-400 cursor-pointer">Config</li>
+          </ul>
 
-      {/*post icon and title*/}
-      <div className="flex flex-row mt-4 justify-center mr-16">
-        <div className="flex text-gray-700 text-center py-2 m-2 pr-5">
-          <div className="flex inline-flex">
-            <button
-              className="border-transparent text-gray-800 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
-              aria-label="Notifications"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
-              </svg>
-            </button>
+          {/* Search Box if login yes show search box*/}
+          {/* <div className="border border-black rounded">
+                  <input
+                    className="border-none"
+                    type="text"
+                    placeholder="Search..."
+                    name="search"
+                  />
+                </div> */}
+          {/* Login Register */}
+          <div className="hidden md:block rounded px-4 py-2 cursor-pointer bg-cyan-400 text-white font-mono">Login</div>
+
+          {/* TongelBar */}
+          <div className="md:hidden">
+            <a className="text-4xl text-cyan-400" href="#">&#8801;</a>
           </div>
-          <div className="flex inline-flex ml-2 mt-1">
-            <h3 className="text-sm font-bold text-gray-800 mr-2">PROJECTS</h3>
+        </nav>
+        {/* Nav Bar end */}
+
+        {/* Main Content */}
+        <div className="flex justify-between text-white z-0">
+
+
+
+
+          {/* Profile */}
+          <div className="profile w-full md:w-1/2 ">
+            <header>
+              <div className="flex flex-col h-auto bg-gradient-to-r hover:bg-gradient-to-t from-slate-850 to-slate-900 items-center justify-center">
+                <div className="w-20 h-20 mt-10 mb-2 p-0.5 bg-cyan-300 rounded-full">
+                  <img
+                    src="https://avatars.githubusercontent.com/u/72151379?v=4"
+                    alt="Profile Image"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                {/* User Info */}
+                <div className="userInfo text-center">
+                  <h2 className="font-bold">Mohammad Ashif</h2>
+                  <span className="text-sm">Developer</span>
+                  <div className="flex justify-center">
+                    <div className="followers flex-col mx-4">
+                      <button>100k</button>
+                      <h1 className="text-sm">Followers</h1>
+                    </div>
+                    <div className=" border-r-2 border-cyan-400"></div>
+                    <div className="followers flex-col mx-4">
+                      <button>126</button>
+                      <h1 className="text-sm">Following</h1>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full border-b-2 opacity-25 border-cyan-300 mt-4"> </div>
+
+
+
+                {/* Social Media Filter */}
+                <div className="w-full flex justify-evenly mt-2">
+
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152366195-2a7a5be2-acc8-485c-9908-861bcfaa3f2b.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152366251-81e7024b-81c6-422c-ae71-ad035850d030.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152366230-0d5c915e-b212-49cc-b5d5-00d50b1493f6.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+
+                  <div className="w-14 h-14 rounded-full hidden md:block">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152366154-ec1ddf07-fcf8-41f5-a5f8-ccfc331622a2.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14  rounded-full hidden md:block">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152366741-4ebfc910-49b4-4365-829d-89f9a5873ff5.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152036063-21242e52-af65-4a33-af5d-790466244407.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+
+
+                </div>
+                {/* End Filter */}
+
+
+                {/* Social Media Filter */}
+                <div className="w-full flex justify-evenly mt-2">
+
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152035581-a7c6c0c3-65c3-4160-89c0-e90ddc1e8d4e.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152035696-80cad2ec-b4dd-4552-88e6-b6b466124f5b.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152042608-2ae071b9-2a64-49be-a49d-f830152cf8d4.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152036063-21242e52-af65-4a33-af5d-790466244407.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14 rounded-full hidden md:block">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152035015-605f666e-bfe9-4723-a900-0b1e2790b8f1.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <div className="w-14 h-14  rounded-full hidden md:block">
+                    <img
+                      src="https://user-images.githubusercontent.com/60597290/152035786-d00aa1c3-56af-4d45-8a3c-15846d1a123d.png"
+                      alt="Profile Image"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+
+
+                </div>
+                {/* End Filter */}
+
+
+
+
+                {/* Posts */}
+                <div className="posts flex flex-col justify-center">
+                  <div className="container mx-auto p-4">
+                    <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                      <div className="mb-4 flex items-center">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <p className="text-white text-sm">Posted 2 hours ago</p>
+                        </div>
+                      </div>
+                      <p className="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                      </p>
+                      <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                      <div className="flex justify-between mt-4">
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">15 Likes</span>
+                        </div>
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">3 Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container mx-auto p-4">
+                    <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                      <div className="mb-4 flex items-center">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <p className="text-white text-sm">Posted 2 hours ago</p>
+                        </div>
+                      </div>
+                      <p className="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                      </p>
+                      <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                      <div className="flex justify-between mt-4">
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">15 Likes</span>
+                        </div>
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">3 Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container mx-auto p-4">
+                    <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                      <div className="mb-4 flex items-center">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <p className="text-white text-sm">Posted 2 hours ago</p>
+                        </div>
+                      </div>
+                      <p className="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                      </p>
+                      <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                      <div className="flex justify-between mt-4">
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">15 Likes</span>
+                        </div>
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">3 Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container mx-auto p-4">
+                    <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                      <div className="mb-4 flex items-center">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <p className="text-white text-sm">Posted 2 hours ago</p>
+                        </div>
+                      </div>
+                      <p className="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                      </p>
+                      <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                      <div className="flex justify-between mt-4">
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">15 Likes</span>
+                        </div>
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">3 Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="container mx-auto p-4">
+                    <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                      <div className="mb-4 flex items-center">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <p className="text-white text-sm">Posted 2 hours ago</p>
+                        </div>
+                      </div>
+                      <p className="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                      </p>
+                      <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                      <div className="flex justify-between mt-4">
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">15 Likes</span>
+                        </div>
+                        <div className="flex items-center">
+                          <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                          </img>
+                          <span className="ml-1 text-gray-500">3 Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </header>
           </div>
-        </div>
-        <div className="flex text-gray-700 text-center py-2 m-2 pr-5">
-          <div className="flex inline-flex">
-            <button
-              className="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
-              aria-label="Notifications"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* Feed */}
+          <div className="feed hidden md:block w-1/4">
+            
+            <header>
+            <div className="title  flex justify-around mt-2">
+                <div className="text-2xl font-bold text-cyan-400">Trendings</div> 
+            </div>
+           
+             <div className="posts flex flex-col justify-center">
+                {/* Post Container */}
+                <div className="container mx-auto p-4">
+                  <div className="max-w-md bg-slate-800 border-spacing-1 shadow-md p-4 rounded-md">
+                    <div className="mb-4 flex items-center">
+                      <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                      <div className="ml-4">
+                        <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                        <p className="text-white text-sm">Posted 2 hours ago</p>
+                      </div>
+                    </div>
+                    <p className="text-base text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                    </p>
+                    <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                    <div className="flex justify-between mt-4">
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">15 Likes</span>
+                      </div>
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">3 Comments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Following Content */}
+                <div className="title  flex justify-around mt-2">
+                <div className="text-2xl font-bold text-cyan-400">Following Content & Projects</div> 
+            </div>
+            
+                <div className="container mx-auto p-4">
+                  <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                    <div className="mb-4 flex items-center">
+                      <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                      <div className="ml-4">
+                        <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                        <p className="text-white text-sm">Posted 2 hours ago</p>
+                      </div>
+                    </div>
+                    <p className="text-base text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                    </p>
+                    <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                    <div className="flex justify-between mt-4">
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">15 Likes</span>
+                      </div>
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">3 Comments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="container mx-auto p-4">
+                  <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                    <div className="mb-4 flex items-center">
+                      <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                      <div className="ml-4">
+                        <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                        <p className="text-white text-sm">Posted 2 hours ago</p>
+                      </div>
+                    </div>
+                    <p className="text-base text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                    </p>
+                    <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                    <div className="flex justify-between mt-4">
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">15 Likes</span>
+                      </div>
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">3 Comments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="container mx-auto p-4">
+                  <div className="max-w-md bg-slate-800 shadow-md p-4 rounded-md">
+                    <div className="mb-4 flex items-center">
+                      <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                      <div className="ml-4">
+                        <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                        <p className="text-white text-sm">Posted 2 hours ago</p>
+                      </div>
+                    </div>
+                    <p className="text-base text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? At enim, qua in vita est aliquid mali, ea beata esse non potest.
+                    </p>
+                    <img src="https://th.bing.com/th?id=OIP.lj4Jyc9MBjN6sWWNVwPMWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Post Image" className="mt-4 w-full rounded-md" />
+                    <div className="flex justify-between mt-4">
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.G9Rr-WHi6wkclzYD_GaQdwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">15 Likes</span>
+                      </div>
+                      <div className="flex items-center">
+                        <img src="https://th.bing.com/th?id=OIP.seTTGC70_SX5rb2GIAVOQwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" className="w-6 h-6 text-gray-500">
+                        </img>
+                        <span className="ml-1 text-gray-500">3 Comments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </header>
           </div>
-          <div className="flex inline-flex ml-2 mt-1">
-            <h3 className="text-sm font-medium text-gray-700 mr-2">INTERESTS</h3>
-          </div>
-        </div>
-        <div className="flex text-gray-700 text-center py-2 m-2 pr-5">
-          <div className="flex inline-flex">
-            <button
-              className="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
-              aria-label="Notifications"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-              </svg>
-            </button>
-          </div>
-          <div className="flex inline-flex ml-2 mt-1">
-            <h3 className="text-sm font-medium text-gray-700 mr-2">CONTRIBUTIONS</h3>
-          </div>
-        </div>
-        <div className="flex text-gray-700 text-center py-2 m-2 pr-5">
-          <div className="flex inline-flex">
-            <button
-              className="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
-              aria-label="Notifications"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-              </svg>
-            </button>
-          </div>
-          <div className="flex inline-flex ml-2 mt-1">
-            <h3 className="text-sm font-medium text-gray-700 mr-2">UPDATES</h3>
+
+
+
+
+
+
+
+
+          {/* Messages */}
+          <div className="message hidden md:block w-1/4">
+            <header>
+              <div className="title  flex justify-around mt-2">
+                <div className="text-2xl font-bold text-cyan-400">Messages</div> 
+            </div>
+           
+            {/* Inbox */}
+<div className="inbox flex-col my-5">
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+            <div className="flex items-center mt-3">
+                        <img src="https://avatars.githubusercontent.com/u/72151379?v=4" alt="Post Author" className="w-12 h-12 rounded-full" />
+                        <div className="ml-4 w-full">
+                          <h2 className="text-m font-semibold">Mohammad Ashif</h2>
+                          <div className="msg_box">
+                          <p className="text-white text-sm">Kya hoorha hai bhai...</p> 
+                          </div>
+                          
+                        </div>
+                        <div className="flex flex-end">
+                        <img src="https://th.bing.com/th/id/OIP.EL0r8D-jr3g7vP6XS4HrKAHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7" alt="Post Author" className="w-6 h-6 rounded-full mr-3" />
+                        </div>
+                      </div>
+                      
+                      </div>          
+            </header>
           </div>
         </div>
       </div>
-      {/*post images*/}
-      <div className="flex pt-4">
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-      </div>
-      <div className="flex pt-4">
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-      </div>
-      <div className="flex pt-4">
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-        <div className="flex-1 text-center px-4 py-2 m-2">
-          <img
-            className="w-full"
-            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</>
+    </>
 
   );
 }
