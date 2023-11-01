@@ -71,6 +71,15 @@ We welcome contributions from the developer community to make Syncraze even bett
 
 MIT License
 
+# Our Contributors
+
+| Name of Contributors   |                                     Profiles                                        | Roles |
+|:---                    |            :----                                                                   |    :----  |
+| Mohammad Ashif       |  [@Mohammadashif1001](https://github.com/mohammadashif1001)                                      |Full stack|
+| Arpit Yadav       |  [@darkxxdevs](https://github.com/darkxxdevs)                                  |Fullstack |
+| Pallav Rai       |  [@darkxxdevs](https://github.com/pallavrai)                                  |Fullstack |
+
+
 ## Contact
 
 If you have any questions or need assistance, feel free to reach out to us at mohammadashif1000@gmail.com.
