@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ParticleBackground from "../particale-bg";
 
 export default function Home() {
   return  (
