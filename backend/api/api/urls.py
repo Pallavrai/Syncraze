@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('profile/', include('Profile.urls'))
+    path('profile/', include('Profile.urls')),
+    path('auth/',ObtainAuthToken.as_view())
 ]
 
 if settings.DEBUG:

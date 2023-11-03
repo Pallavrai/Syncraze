@@ -3,4 +3,9 @@ from Profile.models import UserProfile
 class ProfileDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        exclude = ['password']
+        fields = ['id','username','email','bio','profile_picture']
+
+class ProfileCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = ['username','email','password','bio','profile_picture']
