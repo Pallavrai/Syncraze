@@ -55,8 +55,69 @@ Before you begin, ensure you have the following installed:
 
 3. Open your web browser and access the application at [http://localhost:8000](http://localhost:3000)
 
-<!-- ### Usage
-[Provide instructions on how to use the application, including creating an account, logging in, and using its features.] -->
+## API Routes
+
+Here is the list of some basic API routes.
+
+- [Profile Details](#profile-details)
+- [Create Profile](#create-profile)
+
+## Profile Details
+
+### Get Profile Details
+
+**Endpoint:** `/profiles/<int:id>/`
+
+**Method:** `GET`
+
+**Description:** Get details of a user profile by providing the user's ID.
+
+**Parameters:**
+- `id` (int): User ID
+
+**Example Request:**
+```bash
+curl -X GET http://[base-url]/profiles/[id]/
+```
+Example Response:
+
+```json
+{
+    "id": 2,
+    "username": "omega",
+    "email": "omega@gmail.com",
+    "bio": "hello how are you",
+    "profile_picture": "http://localhost:8000/media/None/Screenshot_from_2023-11-01_06-26-13.png",
+    "followers": 0,
+    "following": 1,
+    "posts_count": 0
+}
+```
+
+# Create Profile
+
+## Create a New Profile
+
+**Endpoint:** `/profiles/create/`
+
+**Method:** `POST`
+
+**Description:** Create a new user profile.
+
+**Parameters:**
+- `username` (string): User's username
+- `email` (string): User's email
+- `bio` (string): User's biography (optional)
+- `profile_picture` (file): User's profile picture (optional)
+
+**Example Request:**
+```bash
+curl -X POST -H "Content-Type: multipart/form-data" -F "username=john_doe" -F "email=john@example.com" -F "bio=A passionate developer" -F "profile_picture=@profile.jpg" http://[base-url]/profiles/create/
+```
+#### [ ] Replace them with your own values.
+
+
+
 
 ## Contribution
 
@@ -77,7 +138,7 @@ MIT License
 |:---                    |            :----                                                                   |    :----  |
 | Mohammad Ashif       |  [@Mohammadashif1001](https://github.com/mohammadashif1001)                                      |Fullstack|
 | Arpit Yadav       |  [@darkxxdevs](https://github.com/darkxxdevs)                                  |Fullstack |
-| Pallav Rai       |  [@darkxxdevs](https://github.com/pallavrai)                                  |Fullstack |
+| Pallav Rai       |  [@Pallav Rai](https://github.com/pallavrai)                                  |Fullstack |
 
 
 ## Contact
