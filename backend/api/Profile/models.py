@@ -29,6 +29,9 @@ class Follower(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='following')
     follower = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='followers')
 
+    def __str__(self):
+        return f'{self.user} - {self.follower}'
+
     class Meta:
         indexes = [
             models.Index(fields=['user', 'follower']),
